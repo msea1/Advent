@@ -39,6 +39,7 @@ Find the Elf carrying the most Calories. How many total Calories is that Elf car
 """
 
 def find_most_calories_carried(input_str: str) -> int:
+    # assumption: you cannot have negative calories carried
     max_calories_seen = 0
     if not input_str:
         return max_calories_seen
