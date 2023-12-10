@@ -46,5 +46,6 @@ def generate_answer(input_override: Optional[str] = None) -> int:
     print(f"Answer to Day 01a is {running_sum}")
     return running_sum
 
+
 if __name__ == '__main__':
     generate_answer()

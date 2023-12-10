@@ -35,6 +35,7 @@ DIGIT_NAMES = {
     "zero": 0
 }
 
+
 def check_buffer_for_number(buffer: str) -> Optional[int]:
     for digit, num_v in DIGIT_NAMES.items():
         if digit in buffer:
@@ -91,6 +92,7 @@ def generate_answer(input_override: Optional[str] = None) -> int:
                 running_sum += return_bookend_numbers(line.strip())
     print(f"Answer to Day 01b is {running_sum}")
     return running_sum
+
 
 if __name__ == '__main__':
     generate_answer()
